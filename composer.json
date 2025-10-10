@@ -1,0 +1,32 @@
+{
+  "name": "pringuin/opendxp-dataprivacybundle",
+  "type": "opendxp-bundle",
+  "license": "GPL-3.0-or-later",
+  "description": "Dataprivacy Bundle for OpenDXP",
+  "keywords": ["opendxp", "dataprivacy"],
+  "homepage": "https://github.com/pringuin/opendxp-dataprivacybundle",
+  "authors": [
+    {
+      "name": "PRinguin GbR",
+      "email": "kontakt@pringuin.de",
+      "homepage": "https://pringuin.de/",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "pringuin\\": "src/pringuin/"
+    }
+  },
+  "extra": {
+    "opendxp": {
+      "bundles": [
+        "pringuin\\DataprivacyBundle\\pringuinDataprivacyBundle"
+      ]
+    }
+  },
+  "require": {
+    "open-dxp/opendxp": "^1",
+    "php":"^8.3"
+  }
+}
